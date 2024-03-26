@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>html5</title>
+		<style>
+			/* ,(콤마) : 그룹선택자 */
+			h1,h2{
+				display:inline;/* 이렇게 해도 태생은 바뀌지 않는다. */
+				background-color:pink;}
+			/* p태그의 직계자식인 span을 500*50px, lightblue 배경색을 가진 박스로 만들고 싶다. */
+			/* > 직계자식 선택자
+			p>span{
+				display:block;
+				width:500px;
+				height:50px;
+				line-height:50px;
+				background-color:lightblue;
+			}
+			
+			/* p태그의 직계자식인 img의 가로폭을 800px로 만들고 싶다.*/
+			P>img{
+				width:800px;
+				height:auto;
+			}
+		</style>
+	</head>
+<body>
+	<h1>독도가 <span>대한민국</span> 땅이라는</h1> 
+	<h2>명백한 증거들</h2>
+
+<!--
+	독도가 대한민국 땅이라는 명백한 증거들
+	1. 세종실록지리지(1454년) 표기
+	
+	2. 일본 태정관의 인정(1877년)
+	
+	3. 서양의 조선왕국전도에 표기(1874년)
+	
+	4. 1950년 연합국의 공식발표
+	
+	동서양을 막론한
+	독도가 대한민국 영토라는 주장을 뒷받침하는 수많은 증거
+	자료들~! 
+ -->
+	
+	<div>
+		<p>1. 세종실록지리지(1454년) 표기</p>
+		<p>2. 일본 태정관의 인정(1877년)</p>
+		<p>3. 서양의 조선왕국전도에 표기(1874년)</p>
+		<p>4. 1950년 연합국의 공식발표</p>	
+	</div>
+	
+	<hr />
+	
+		<p>
+			동서양을 막론한
+			<span>독도가 대한민국 영토라는 주장을 뒷받침하는 수많은 증거</span>
+			자료들~!
+		</p>
+		<p>
+			<img src="./images/evidence.jpg" alt="대한민국 영토라는 증거">
+		</p>
+		
+		<hr />
+		
+		<span style="display:block;color:red;">
+			<p>인라인 요소가 블럭요소를 자식으로 가진 경우 : 유효성 검사에서 에러 발생</p>
+		</span>
+	
+	
+		<!-- #은 현재 페이지를 뜻한다. -->
+		<a href="#">
+			<p>html5 버전에서는 앵커태그가 블럭 요소를 자식으로 가진 경우 : 문법적 오류에 해당되지 않는다.</p>
+		</a>
+</body>
+</html>

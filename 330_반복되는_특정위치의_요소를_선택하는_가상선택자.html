@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      ol{
+         line-height: 2.5;
+         text-align: center;
+      }
+      
+        /* 첫번째 li의 글자색을 red, 크기를 50px */
+        ol>li:first-child{color:red;}
+        ol>li:nth-child(1){font-size: 50px;}
+
+        /* 마지막 li의 글자색을 blue, 크기를 30px */ 
+        ol>li:last-child{color:blue;}
+        ol>li:nth-of-type(10){font-size: 30px;}
+
+        /* 7번째 li의 글자색을 green, 크기를 40px */
+        ol>li:nth-child(7){color: green;}
+        ol>li:nth-of-type(7){font-size:40px;}
+
+        /* 짝수번째 li에 배경색을 노랑, 이탤릭체로 설정 */
+        ol>li:nth-child(even){background-color: yellow;}
+        ol>li:nth-of-type(2n){font-style: italic;}
+
+        /* 홀수번째 li에 밑줄, 아주굵게 설정 */      
+        ol>li:nth-child(odd){text-decoration: underline;}
+        ol>li:nth-of-type(2n+1){font-weight: 800;}
+   </style>
+</head>
+<body>
+   <ol>
+      <li>1번째 자식</li>
+      <li>2번째 자식</li>
+      <li>3번째 자식</li>
+      <li>4번째 자식</li>
+      <li>5번째 자식</li>
+      <li>6번째 자식</li>
+      <li>7번째 자식</li>
+      <li>8번째 자식</li>
+      <li>9번째 자식</li>
+      <li>10번째 자식</li>
+   </ol>
+</body>
+</html>

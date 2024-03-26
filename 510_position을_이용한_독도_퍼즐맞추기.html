@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>html5</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    ul{
+      position: relative;/*기준점설정*/
+      width: 1366px;
+      height: 768px;
+      margin: 0 auto;
+      background-image: url(./images/서도-퍼즐.jpg);
+    }
+
+    ul>li{     
+      width: 220px;
+      height: 140px;
+      color: white;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 100px;
+      text-align: center;
+      border: 3px solid white;
+    }
+
+    ul>li:hover{text-decoration: underline;}
+
+    ul>li:nth-child(1){
+      position: absolute;
+      left: 280px;
+      top: 480px;
+      background-image: url(./images/서도-퍼즐-어민숙소.jpg);
+    }
+
+    ul>li:nth-child(2){
+      position: absolute;
+      left: 590px;
+      top: 90px;
+      background-image: url(./images/서도-퍼즐-대한봉.jpg);
+    }
+
+    ul>li:nth-child(3){
+      position: absolute;
+      left: 860px;
+      top: 300px;
+      background-image: url(./images/서도-퍼즐-탕건봉.jpg);
+    }
+
+    ul>li:nth-child(4){
+      position: absolute;
+      left: 1080px;
+      top: 510px;
+      background-image: url(./images/서도-퍼즐-삼형제굴바위.jpg);
+    }
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1 class="text-center">독도의 서도 퍼즐맞추기</h1>
+
+    <ul>
+      <li>어민숙소</li>
+      <li>대한봉</li>
+      <li>탕건봉</li>
+      <li>삼형제굴바위</li>
+    </ul>
+  </div>
+</body>
+</html>

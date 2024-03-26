@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>html5</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<style>
+		h1{
+			width: 200px;
+			margin: 100px auto;
+			color: white;
+			text-align: center;
+			
+			
+			/* text-shadow:x좌표 y좌표 blur(퍼짐) 컬러; */
+			text-shadow: 2px 2px 5px rgba(255,0,0,0.5);
+			
+			/*
+			box-shadow: x좌표 y좌표 blur(퍼짐) 컬러;
+			box-shadow: x좌표 y좌표 blur(퍼짐) spread(크기) inset(안쪽 지정) 컬러;
+			*/
+			
+			
+			
+		
+		
+		}
+	
+	
+	</style>
+	
+	<style>
+		body{background-color: #dedede;}
+		.phone{
+			width: 300px;
+			height: 500px;
+			margin: 0 auto;
+			background-color: #ff0;
+			border-radius: 40px;
+			
+			box-shadow:
+				-6px -6px 15px 5px inset rgba(145,160,180,0.65),
+				30px 30px 40px rgba(118,146,180,0.15);
+		}
+		
+		.top{
+			display: flex;
+			width: 60px;
+			background-color: darkgray;
+			border-radius: 40%;
+		}
+		
+		.top>.camera{
+			width: 60px;
+			height: 5px;
+			background-color: darkgray;
+			border-radius: 50%;
+		}
+		
+		.top>.sound{
+			width: 60px;
+			height: 5px;
+			background-color: darkgray;
+			border-radius: 50%;
+	
+	.screen{
+		width: 85%;
+		height: 500px;
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      h1{
+         width: 300px;
+         margin: 100px auto;
+         padding: 20px 0;
+         color: white;
+         text-align: center;
+         
+         
+         /* text-shadow:x좌표 y좌표 blur(퍼짐) 컬러; */ 
+         text-shadow: 2px 2px 5px rgba(255,0,0,0.5);
+         
+         /*
+         box-shadow: x좌표 y좌표 blur(퍼짐) 컬러;
+         box-shadow: x좌표 y좌표 blur(퍼짐) spread(크기) inset(안쪽지정) 컬러;
+         */
+         box-shadow: 2px 2px 5px black;
+         box-shadow: 12px 12px 25px 10px black;
+         box-shadow: 12px 12px 25px 10px inset black;
+      }
+   </style>
+
+   <style>
+      body{background-color: #dedede;}
+      
+      .phone{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+      
+         width: 100px;
+         height: 200px;
+         margin: 0 auto;
+         padding: 20px 20px 5px;
+         background-color: #ff0;
+         border-radius: 20px;
+         
+         box-shadow:
+            -6px -6px 15px 5px inset rgba(145,160,180,0.65),
+            30px 30px 40px rgba(118,146,180,0.15);
+      }
+      
+      
+      .top{
+         display: flex;
+         justify-content:space-between;
+         align-items:center;
+         width: 50px;
+         /*border: 1px solid black;*/
+      }
+      
+      .top>.camera{
+         width: 10px;
+         height: 10px;
+         background-color: gray;
+         border-radius: 50%;
+      }
+      
+      .top>.sound{
+         width: 60px;
+         height: 5px;
+         background-color: gray;
+         border-radius: 32px;
+      }
+      
+      .screen{
+         position: relative;
+         width: 85%;
+         height: 500px;
+         margin-top: 20px;
+         background-color: skyblue;
+         border-radius: 3px;
+      }
+      
+      .screen>.shadow{
+         position: absolute;
+         left: 0;
+         right: 0;
+         top: 0;
+         bottom: 0;
+         box-shadow:1px 1px 3px inset rgba(100,100,100,0.5);
+      }
+      
+      .bottom{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 70%;
+         height: 50px;
+         /*background-color: pink;*/
+      }
+      
+      .bottom>.btn{
+         width: 50px;
+         height: 50px;
+         border-radius: 50%;
+         background-color: #ff0;         
+         border: 2px solid silver;
+         box-shadow: 2px 2px 1px inset rgba(50,150,250,0.18);
+      }
+   </style>
+</head>
+<body>
+   <div id="wrap">
+      <h1></h1>
+      
+      <div class="phone">
+         <div class="top">
+            <div class="camera"></div>
+            <div class="sound"></div>
+         </div>
+         
+         <div class="screen">
+            <div class="shadow"></div>
+         </div>
+         
+         <div class="bottom">
+            <div class="btn"></div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

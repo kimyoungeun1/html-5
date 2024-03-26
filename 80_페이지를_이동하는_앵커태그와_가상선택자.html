@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>html5</title>
+		<style>
+			a{
+				line-height:50px
+			}
+			
+			/* 앵커태그에 href 속성이 있을 경우*/
+			a:link{
+					color:orange;
+					
+					text-decoration:overline;
+					text-decoration:line-through;
+					text-decoration:underline;
+					text-decoration:none;
+			}
+			
+			/* 브라우저에 해당 경로를 방문한 기록이 남아 있는 경우*/
+			a:visited{
+				color:green;
+			}
+			
+			/* 앵커영역 안으로 마우스포인터가 진입한 경우*/
+			a:hover{
+				text-decoration:underline;
+				text-decoration-color:red;
+			}
+			
+			/* hover한 상태에서 마우스 왼쪽 버튼을 클릭하고 있는경우.*/
+			a:active{
+				color:blue;
+			}
+		</style>
+	</head>
+<body>
+	<h1>독도관련 사이트</h1>
+	
+	<p>
+		<a href="./50_span_태그의_역할.html">1. 50번 예제로 이동</a> <br />
+		<a href="https://k-dokdo.com/">2. K독도 사이트 바로가기</a> <br />
+		<a href="https://k-dokdo.com/" rel="noopener noreferrer" target="_blank">3. K독도 사이트 새탭열기</a>
+	</p>
+</body>
+</html>

@@ -1,0 +1,95 @@
+.파일명 명명규칙
+
+예)line 프로젝트 -> 프로젝트명_카테고리_특징_의미_날짜_기타.png
+                 line_company_botton_next_20231201.png
+  
+          
+의미   키워드 
+          
+메인메뉴 gnb (global navigation bar), mainmnu
+서브메뉴 lnb (local navigation bar), submnu
+          
+네비게이션 nav
+메뉴	    mnu      
+탭메뉴    tap
+제목		tit, h
+텍스트 	txt, tx
+인덱스 	idx
+
+업데이트(갱신) updt
+업로드        upld
+다운로드      dnld
+
+
+켜짐     on
+커짐     off
+
+등록     reg
+답변     rep1
+
+수정     edt
+삭제     del
+
+검색     srch
+찾기     find
+
+더보기   more
+목록    lst
+
+페이징    	paging
+페이지네이션 	pagination
+지시자 		indicator
+
+베스트		best
+신규			new <-> old
+
+읽기			red
+쓰기			wrt
+
+열기			opn
+닫기			close
+
+숨김			hide, blind
+잠그기		lc
+허용			pmit
+화살표		arr
+
+이전			prev
+다음			next
+
+처음			frst
+나중			last
+
+위			up			
+아래			dn
+
+오버			ovr
+상단			top
+하단			btm
+
+전송			smit
+버튼			btn
+
+가기			go
+
+라디오버튼		input_rdo
+체크박스		input_chk
+텍스트필드		input_txt, input_tx
+
+확인			cfm
+완료			ok
+취소			cncl
+
+확대			zin
+축소			zout
+
+수직			vt
+수평			hr
+
+중앙(수직)	mid
+중앙(수평)	cen
+
+감싸다 		wrap, wrapper, container
+문단			p
+내용			cont
+설명			desc, dsc

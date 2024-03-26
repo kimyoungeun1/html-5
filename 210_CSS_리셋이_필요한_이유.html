@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>html5</title>
+	<style>
+		/* CSS Reset : 페이지에서 사용되는 태그에 대한 CSS 기본값을 우리 입맛에 맞게 초기화 */
+		html, body{width:100%; height:100%;}
+		
+		html, body, div, h1, p, em, strong, span, blockquote{
+			margin:0;
+			padding:0;
+		}
+		
+		em{font-style: normal;}
+		
+		body{
+			color: #222;
+			font-size: 14px;
+			line-height: 1.5;
+			font-family: "my love", 돋움, 굴림;
+		}
+		
+		/* 사용자정의 CSS */
+		h1{font-weight: 400;}
+	</style>
+</head>
+<body>
+	<!-- 
+		CSS 리셋이 필요한 이유
+		기본적으로 모든 브라우저는 자체에 내장된 기본 스타일로 웹페이지를 해석하여 출력한다.
+		문제는 CSS 속성값이 브라우저마다 조금씩 다르다는 점이다.
+		따라서 우리가 사용할 여러 태그의 CSS 기본 속성값을 같게 해야 한다.
+	-->
+  <div id="wrap">
+    <h1>Dokdo is korea island</h1>
+
+    <p>
+      <em>Korean records : Korean literature and maps record Dokdo as part of Korean territory since 512</em>
+      <strong>
+        Japanese records : Official documents reveal that Japan acknowledged Dokdo was not Japanese territory.
+      </strong>
+      <span>
+        The Cairo Declaration (1943) and the Potsdam Declaration (1945): "Japan will also be expelled from all other territories which she has taken by violence and greed."
+      </span>
+    </p>
+
+   	<blockquote cite="http://k-dokdo.com/english/index.do?menu_id=00000127" title="SCAPIN 677">
+   	"Excludes Ulleungdo, Dokdo and Jejudo from those territories controlled and administered by Japan."
+   	</blockquote>
+  </div>
+</body>
+</html>

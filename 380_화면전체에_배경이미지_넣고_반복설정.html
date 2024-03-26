@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      /* 화면 전체에 CSS효과를 주고 싶다면 body 태그에 설정 */
+      body{
+         background-color: yellow; /* 키워드 */
+         background-color: #ff0; /* 16진수 헥사코드 */
+         background-color: rgb(255, 255, 0);
+         background-color: rgba(255, 255, 0, 0.5);/* 투명도를 조절하는 알파값 0~1 */
+         
+         background-image: url(./images/bg_dokdo.jpg);
+      }
+      
+      p{
+         width: 1400px;
+         height: 480px;
+         margin: 0 auto;
+         font-size: 24px;
+         line-height: 480px;
+         text-align: center;
+         background-color: #ff0;
+         background-image: url(./images/img_dokdo.jpg);
+         border: 1px solid #ccc;
+         
+         /* 반복설정 */
+         background-repeat: no-repeat;/*가장중요*/
+         background-repeat: repeat-x;
+         background-repeat: repeat-y;
+         background-repeat: repeat; /* 기본값 */
+      }
+   </style>
+</head>
+<body>
+   <div id="wrap">
+      <h1 class="text-center">배경이미지 설정</h1>
+      
+      <p>독도와 자연의 향연</p>
+   </div>
+</body>
+</html>

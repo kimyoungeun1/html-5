@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      #wrap{
+         width: 800px;
+         margin: 0 auto;
+         padding-bottom: 100px;
+      }
+      
+      article{
+         width: 200px;
+         height: 200px;
+         margin: 0 0 100px 200px;
+         border: 5px solid orange;
+      }
+      
+      article>p{
+         width: 100%;
+         height: 100%;
+         line-height: 200px;
+         text-align: center;
+         background-color: rgba(0,255,0,0.5);
+      }
+      
+      .one{
+         /* w,h은 왼쪽상단을 기준으로 적용됨 
+         width: 120%;
+         height: 120%;*/
+         
+         transform: scale(1.2) rotate(0deg) skew(-30deg,-30deg);
+      }
+      
+      .two{
+         background-color: rgba(255,0,255,0.3);
+         
+         transform-origin: right bottom;
+         transform-origin: center center;
+         transform-origin: left top;
+         transform: scale(1.2) rotate(45deg);
+      }
+      
+      .three{
+         background-color: rgba(255,255,0,0.3);
+         transform: translate(-50px,200px);
+      }
+   </style>
+</head>
+<body>
+   <div id="wrap">
+      <h1 class="text-center">요소의 변형 transform</h1>
+      
+      <section>
+         <article>
+            <p class="one">변형1</p>
+         </article>
+         <article>
+            <p class="two">변형2</p>
+         </article>
+         <article>
+            <p class="three">변형3</p>
+         </article>
+      </section>
+   </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      body{padding-bottom: 1000px;}
+      
+      .standard{
+         /* position: absolute; 기준점 설정 가능 */
+         /* position: fixed; 기준점 설정 가능 */ 
+         position: relative; /* 기준점 설정 가능 */
+      
+         width: 400px;
+         height: 400px;
+         margin: 100px;
+         background-color: gold;
+      }
+      
+      .standard>.abs{
+         /* 플렉스를 이용한 가세정렬 */
+         display:flex;         
+         justify-content:center;
+         align-items:center;
+         
+         position: absolute;
+         left: 80px;
+         top: 50px;
+         
+         width: 100px;
+         height: 100px;
+         text-align: center;
+         background-color: skyblue;
+      }
+   </style>
+</head>
+<body>
+   <div class="standard">
+      <p class="abs">포지셔닝 <br />박스</p>
+   </div>
+</body>
+</html>

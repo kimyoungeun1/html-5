@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+#wrap{
+   width: 514px;
+   margin: 0 auto;
+   /*border: 1px solid red;*/
+}
+
+div>nav{}
+div>nav>ul{
+   display: flex;
+   flex-direction:row;/*주축의 방향*/
+   flex-wrap:nowrap;/*한줄 또는 여러줄 설정*/
+   justify-content:space-between;
+}
+
+div>nav>ul>li{
+   width: 121px;
+   /* outline:1px solid blue; */
+}
+
+div>nav>ul>li>a{
+   display: block;
+   height: 80px;
+   text-indent: -9999px;
+}
+
+div>nav>ul>li>a:hover{background-position: 0 -81px;}
+div>nav>ul>li:nth-child(1)>a{border: 3px solid red;
+background-image: url(./../op/thumb1.jpg);}
+div>nav>ul>li:nth-child(2)>a{border: 3px solid red;
+background-image: url(./../op/thumb2.jpg);}
+div>nav>ul>li:nth-child(3)>a{border: 3px solid red;
+background-image: url(./../op/thumb3.jpg);}
+div>nav>ul>li:nth-child(4)>a{border: 3px solid red;
+background-image: url(./../op/thumb4.jpg);}
+div>nav>ul>li:nth-child(5)>a{border: 3px solid red;
+background-image: url(./../op/thumb5.jpg);}
+div>nav>ul>li:nth-child(6)>a{border: 3px solid red;
+background-image: url(./../op/thumb6.jpg);}
+div>nav>ul>li:nth-child(7)>a{border: 3px solid red;
+background-image: url(./../op/thumb7.jpg);}
+div>nav>ul>li:nth-child(8)>a{border: 3px solid red;
+background-image: url(./../op/thumb8.jpg);}
+div>nav>ul>li:nth-child(9)>a{border: 3px solid red;
+background-image: url(./../op/thumb9.jpg);}
+
+div>p{
+   height: 300px;
+   margin-top: 10px;
+   text-indent: -9999px;
+   background-image: url(./../op/big1.jpg);
+   background-size: cover;
+   border: 3px solid red;
+   box-sizing: border-box;
+}
+
+div>address{
+   display: flex;
+   justify-content:center;
+   align-items:center;
+   height: 50px;
+}

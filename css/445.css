@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+#wrap{
+   width: 514px;
+   margin: 0 auto;
+   /*border: 1px solid red;*/
+}
+
+div>nav{}
+div>nav>ul{
+   display: flex;
+   flex-direction:row;/*주축의 방향*/
+   flex-wrap:nowrap;/*한줄 또는 여러줄 설정*/
+   justify-content:space-between;
+}
+
+div>nav>ul>li{
+   width: 121px;
+   /* outline:1px solid blue; */
+}
+
+div>nav>ul>li>a{
+   display: block;
+   height: 80px;
+   text-indent: -9999px;
+}
+
+div>nav>ul>li>a:hover{background-position: 0 -81px;}
+
+div>nav>ul>li:nth-child(1)>a{background-image: url(./../images/mnu_01.png);}
+div>nav>ul>li:nth-child(2)>a{background-image: url(./../images/mnu_02.png);}
+div>nav>ul>li:nth-child(3)>a{background-image: url(./../images/mnu_03.png);}
+div>nav>ul>li:nth-child(4)>a{background-image: url(./../images/mnu_04.png);}
+
+div>p{
+   height: 300px;
+   margin-top: 10px;
+   text-indent: -9999px;
+   background-image: url(./../images/독도-전시회.jpg);
+   background-size: cover;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+}
+
+div>address{
+   display: flex;
+   justify-content:center;
+   align-items:center;
+   height: 50px;
+}

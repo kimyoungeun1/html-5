@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      .container{
+         width: 100px;
+         margin: 0 auto;
+         font-size: 30px;
+         text-align: center;
+      }
+      
+       /* 3번째 p요소에 빨간색으로 글자크기를 50px */
+       /* p와 친형제관계에 있는 모든 요소에 대해 순차적으로 카운팅 */
+       .container>p:nth-child(5){color:red;}
+       
+       /* 순수하게 친형제관계에 있는 p요소에 대해서만 카운팅 */
+       .container>p:nth-of-type(3){font-size: 50px;}
+   
+   
+       /* 4번째 address요소에 노란배경으로 글자크기 48px */  
+      .container>address:nth-child(8){background-color: #ff0;}
+      .container>address:nth-of-type(4){font-size: 48px;}               
+   </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1 class="text-center">:nth-child()와 :nth-of-type()의 차이</h1>
+
+    <div class="container">
+      <p>1</p>
+      <address>A</address>
+      <p>2</p>
+      <address>B</address>
+      <p>3</p>
+      <address>C</address>
+      <p>4</p>
+      <address>D</address>
+      <p>5</p>
+      <address>E</address>
+    </div>
+  </div>
+</body>
+</html>

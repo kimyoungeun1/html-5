@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+      @font-face {
+          font-family: 'JalnanGothic';
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+      }      
+      
+      /*
+         웹폰트 적용단계
+         
+         1. 구글폰트나 눈누에서 원하는 서체를 선택후 @import 또는 @font-face 구문을 상단에 복붙한다.
+         
+         2. 적용예시 코드를 복사해서 원하는 선택자에 적용한다.
+      */
+      
+      p.google{
+         font-size: 40px;
+         font-family: 'East Sea Dokdo', 돋움;
+         word-spacing: 30px;
+      }
+      
+      
+      p.noonnu{
+         font-family: JalnanGothic;
+      }
+   </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>독도월드 네비게이션</h1>
+
+    <div>
+      <h2>1. 웹폰트 적용전</h2>
+      <p>
+        새소식&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        관람안내&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        특별전시&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        주요일정
+      </p>
+    </div>
+
+    <hr />
+
+    <div>
+      <h2>2. 구글 웹폰트 적용후</h2>
+      <p class="google">
+        새소식
+        관람안내
+        특별전시
+        주요일정
+      </p>
+    </div>
+
+    <hr />
+
+    <div>
+      <h2>3. 눈누 웹폰트 적용후</h2>
+      <p class="noonnu">
+        새소식
+        관람안내
+        특별전시
+        주요일정
+      </p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+body{
+   font-weight: 300;
+   font-size: 13px;
+   font-family: 'Noto Sans KR', 돋움;
+   background-color: #fdfcf0;
+}
+
+#wrap{
+   width: 1000px;
+   margin: 0 auto;
+   padding: 50px 0;
+   /*border: 1px solid red;*/
+}
+
+header>h1{
+   margin-bottom: 20px;
+   font-size: 15px;
+}
+
+header>h1+p{
+   font-weight: 500;
+   line-height: 1.5;/* 150% */
+}
+
+header>p>strong{
+   /* 상위요소에 설정된 값을 상속하는 키워드 inherit */
+   font-weight: inherit;
+}
+
+section{margin: 20px 0;}
+
+section>h2{
+   /* display: none; 이 방법을 사용하면 음성리더기도 인식하지 못하므로 웹접근성이 떨어지는 방법이다. */
+   
+   /* 아래 방법은 웹접근성을 살리면서 화면에서 보이지 않도록 하는 가장 좋은 방법이다. (권장)*/
+   position: absolute;
+   left: -9999px;
+}
+
+section>.will{
+   padding: 40px 0;
+   border-top: 1px solid #e1ddd3;
+   border-bottom: 1px solid #e1ddd3;
+   
+   border: 1px solid #e1ddd3;
+   border-left: none;
+   border-right: none;
+}
+
+section>.will>h3{
+   color: #764d25;
+   font-size: 13px;
+   text-indent: 30px;
+}
+
+section>.will>ul{
+   margin: 20px 0 0 30px;
+}
+
+/* 한칸공백 : 자손선택자(의도치 않은 다른 요소에 영향을 미지지 않을거라는 확신이 있을 때만 사용 권장) */
+section>.will li{
+   line-height: 1.6;
+}
+
+section>.will li>span{
+   display: block;
+   text-indent: 8px;/* block의 속성을 가지고 있는 요소만 가능 */
+}
+
+
+section>.info{margin-top: 20px;}
+
+section>.info>h3{
+   margin-left: 30px;
+   font-size: 13px;
+}
+
+section>.info>div{
+   margin: 20px 15px;
+   padding: 20px;
+   border: 1px solid #e1ddd3;
+}
+
+section>.info>div li{
+   line-height: 1.8;
+}
+
+section>.info>div>p{
+   margin-top: 16px;
+   font-weight: 500;
+}
+
+
+section>.info>.contact{}
+
+section>.info>.contact>p{
+   font-weight: 400;
+}
+
+section>.info>.contact>address{
+   font-weight: 400;
+}
+
+
+footer>p{
+   overflow: hidden;
+   width: 160px;
+   margin: 0 auto;
+   border:2px solid #727272;
+   border-radius: 5px;   
+}
+
+/* a에 hover했을때 배경색을 #eee로 */
+
+footer>p>a{
+   display: block;
+   height: 25px;
+   line-height: 25px;
+   text-align: center;
+}
+
+footer>p>a:hover{
+   background-color: #eee;
+}
+
+footer>address{
+   margin-top: 20px;
+   text-align: center;
+}

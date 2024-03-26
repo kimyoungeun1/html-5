@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      .header,.left,.content,.right,.footer 
+      {flex-direction: column; 
+      justify-content: center;
+      border: 5px solid #dbdbdb;}
+      #wrap{
+      
+         display: flex;
+         flex-direction: column; 
+         border: 1px solid lightgray;
+          text-align: center;
+         width: 960px;
+         font-weight:800;
+         justify-content: center;
+         
+         margin: 0 auto;
+      }
+         .section{
+            display: flex;
+            flex-direction: row;
+            
+         }
+      
+     #wrap>.header{/*justify-content: center;  주축의 중앙에 정렬(tac와 비슷) */
+         
+      height: 100px; background-color: #ffff00;}
+      
+      #wrap>.section{
+               display: flex;
+               flex-direction: row;
+               
+      }
+      
+      #wrap>.section>.left{width: 1250px; height: 300px; background-color: #87ceeb;}
+      
+      #wrap>.section>.content{width: 2500px; height: 300px; background-color: #9acd32;}
+      
+      #wrap>.section>.right{width: 1250px; height: 300px; background-color: #a52a2a;}
+      
+      #wrap>.footer{height: 100px; background-color: #808080;}
+      
+   </style>
+</head>
+<body>
+   <div id="wrap">
+      <div class="header"><p class="a">header</p></div>
+         <div class="section">
+         <div class="left"><p class="b">left</p></div>
+         <div class="content"><p class="c">content</p></div>
+         <div class="right"><p class="d">right</p></div>
+      </div>
+      <div class="footer"><p class="e">footer</p></div>
+      
+   </div>
+</body>
+</html>

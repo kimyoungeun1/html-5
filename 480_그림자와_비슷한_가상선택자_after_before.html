@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      /* 페이지에서 세로 스크롤바가 나타났을때 가로로 컨텐츠가 흔들리는 현상을 방지하기 위해 설정 */
+      body{overflow-y:scroll;}
+   
+      #wrap{width:730px;margin:0 auto;}
+      
+      h1:before{
+         content:'앞 그림자 ';
+         content: '경상북도경찰청 ';
+         content: '';
+      }
+      
+      /* 주의 : 검색엔진의 검색결과에 포함되지 않는다. */
+      
+      h1:after{
+         content: ' 뒷 그림자';
+         content: '에 응원을 남겨주세요~!';
+         content: '';
+      }
+      
+      /* 장식적인 요소를 화면에 나타낼때 활용하는 고급기법 */
+      h1>a:after,
+      h1>a:before{
+         display: inline-block;
+         width: 0;
+         height: 0;
+         border-width: 10px;
+         border-style: solid;
+         border-color: #000 transparent #000 transparent;
+         content: '';
+      }
+   </style>
+</head>
+<body>
+   <div id="wrap">
+      <h1 class="text-center">
+         <a href="#">
+            <!-- <span class="deco"></span> -->
+            독도경비대
+            <!-- <span class="deco"></span> -->
+         </a>
+      </h1>
+   </div>
+</body>
+</html>

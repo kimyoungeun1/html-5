@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      h2, h2~div{text-align: center;}
+      
+      p{
+         width: 85%;
+         margin: 10px auto 50px;
+         padding: 20px;
+         text-align: justify;
+         border: 1px solid black;
+         box-sizing:border-box;
+      }
+      
+      p.one{
+         /* 말줄임처리 3종세트 */
+         overflow: hidden;
+         white-space: nowrap;/* 한줄로 표기 */
+         text-overflow: ellipsis; /* 말줄임 표기 */
+         box-sizing: border-box;
+      }
+      
+      /*두줄 말줄임 처리*/
+      p.two{
+         /* 크롬, 사파리같은 webkit 엔진을 사용하는 브라우저에서만 적용 가능한 문법 */
+         display: -webkit-box; /* 디스플레이 영역을 box 형태로 지정 */
+         -webkit-line-clamp: 2; /* 박스 내부 컨텐츠의 최대 라인수 */
+         -webkit-box-orient: vertical; /* 박스내부 컨텐츠의 정렬 방식 */
+      
+         overflow: hidden;
+         height: 45px;
+         padding: 0 20px;
+         line-height: 1.6;
+      }
+   </style>
+</head>
+<body>
+   <div id="wrap">
+      <h1 class="text-center">말줄임 처리</h1>
+      
+        <h2>한줄 말줄임 처리</h2>
+        <p class="one">
+            1. 울릉도 동남쪽 뱃길 따라 87k 외로운 섬 하나 새들의 고향 그 누가 아무리 자기네 땅이라고 우겨도 독도는 우리 땅~!
+
+            2. 경상북도 울릉군 울릉읍 독도리 동경 백삼십이 북위 삼십칠 평균기온 13도 강수량은 1800 독도는 우리 땅~!
+            
+            3. 오징어 꼴뚜기 대구 홍합 따개비 주민등록 최종덕 이장 김성도 19만 평방미터 799에 805 ​독도는 우리 땅~!
+            
+            4. 지증왕 십삼년 섬나라 우산국 세종실록지리지 강원도 울지현 하와이는 미국땅 대마도는 조선땅 독도는 우리 땅~!
+            
+            5. 러일전쟁 직후에 임자 없는 섬이라고 억지로 우기면 정말 곤란해 신라장군 이사부 지하에서 웃는다 독도는 우리 땅~!
+        </p>      
+      
+      
+        <h2>두줄 말줄임 처리</h2>
+        <p class="two">
+            1. 울릉도 동남쪽 뱃길 따라 87k 외로운 섬 하나 새들의 고향 그 누가 아무리 자기네 땅이라고 우겨도 독도는 우리 땅~!
+
+            2. 경상북도 울릉군 울릉읍 독도리 동경 백삼십이 북위 삼십칠 평균기온 13도 강수량은 1800 독도는 우리 땅~!
+            
+            3. 오징어 꼴뚜기 대구 홍합 따개비 주민등록 최종덕 이장 김성도 19만 평방미터 799에 805 ​독도는 우리 땅~!
+            
+            4. 지증왕 십삼년 섬나라 우산국 세종실록지리지 강원도 울지현 하와이는 미국땅 대마도는 조선땅 독도는 우리 땅~!
+            
+            5. 러일전쟁 직후에 임자 없는 섬이라고 억지로 우기면 정말 곤란해 신라장군 이사부 지하에서 웃는다 독도는 우리 땅~!
+        </p>
+      
+      
+      <div>
+         <img src="./../images/게시판.jpg" alt="#" />
+      </div>
+   </div>
+</body>
+</html>

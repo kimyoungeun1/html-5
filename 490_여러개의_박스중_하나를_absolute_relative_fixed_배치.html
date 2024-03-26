@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      p{
+         width: 200px;
+         height: 200px;
+         background-color: #ff0;
+         border: 1px solid black;
+         box-sizing: border-box;
+      }
+      
+      .abs{
+         /*
+            absolute의 핵심 키포인트
+            
+            => 특정기준점을 기준으로 지정한 좌표값에 요소를 배치
+            
+            1) 기준점을 따로 지정하지 않으면 body가 기준
+            2) absolute를 적용하는 순간 해당 위치를 아래 요소가 차지하기 위해 밀로 올라온다.
+            3) 기준점은 직계부모를 포함한 해당요소의 직계조상(태그구조기준)에게만 설정 가능
+         */
+         position:absolute;
+         left:100px;
+         top:100px;
+         
+         background-color: pink;
+         opacity:1;/* 불투명도 0~1 */
+      }
+      
+      .rel{
+         /*
+            relative의 핵심 키포인트
+            
+            => relative의 좌표이동 기준점은 원래 해당 요소가 위치해 있던 바로 그 지점이 기준점이다.
+            
+            1) 그리고 이동시 원래 있던 자리는 구멍이 뻥~! 뚫린채 그대로 보존된다.
+            2) 그래서 실무에서는 relative로 요소를 이동(배치) 시키는 일이 매우 드물다(거의없다.)
+            3) relative의 주용도는 기준점 설정이다.
+         */
+         position: relative;
+         left: 500px;
+         top: 500px;
+         background-color: skyblue;
+      }
+      
+      .fixed{
+         /*
+            fixed의 핵심 키포인트
+            
+            => fixed는 무조건 body가 기준점이며,
+            => 스크롤바를 이동해도 항상 지정된 좌표에 고정된다.
+         */
+         
+         position: fixed;
+         left: 500px;
+         top: 50px;
+         background-color: greenyellow;
+      }
+   </style>
+</head>
+<body>
+   <!-- 
+      position이 지정된 HTML 요소는 코딩순서와 상관없이 
+      원하는 위치에 배치할 수 있다.
+    -->
+   <p>박스1</p>
+   <p class="abs">abs-박스2</p>
+   <p>박스3</p>
+   <p class="rel">rel-박스4</p>
+   <p class="fixed">fixed-박스5</p>
+   <p>박스6</p>
+</body>
+</html>

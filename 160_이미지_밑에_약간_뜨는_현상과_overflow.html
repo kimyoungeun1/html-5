@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>html5</title>
+	<style>
+		p{
+			width:600px;
+			border:1px solid black;
+		
+			/*
+				이미지밑에 약간 뜨는 현상 해결법-1 (고전적인 방법-비추)
+				원인은 타이포그래피 baseline 아래 공간
+				font-size:0;
+			*/
+		}
+		
+		p>img{
+			display:block;
+			width:800px;
+		}
+		
+		/* overflow 현상이 발생했을 때의 처리방법에 초점을 맞춘다.*/
+		.dokdo-1{overflow:hidden;} /* 넘치는 부분을 숨김처리 - 가장중요함 */
+		.dokdo-2{overflow:scroll;} /* 넘치든 안넘치든 무조건 scrollbar가 나타남 */
+		.dokdo-3{overflow:auto;} /* 넘치게 되면 자동으로 scrollbar가 나타남 */
+		.dokdo-4{overflow:visible;} /* 기본값 : 넘치는 부분이 그냥 계속 보임 */
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<h1>overflow 처리</h1>
+		
+		<p class="dokdo-1"><img src="./images/dongdo.png" alt="맑은동도" /></p>
+		<p class="dokdo-2"><img src="./images/dongdo-storm.png" alt="태풍동도" /></p>
+      	<p class="dokdo-3"><img src="./images/seodo.png" alt="맑은서도" /></p>
+      	<p class="dokdo-4"><img src="./images/seodo-strom.png" alt="태풍서도" /></p>
+   	</div>
+</body>
+</html>

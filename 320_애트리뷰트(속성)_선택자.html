@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      #wrap{
+         width: 600px;
+         margin: 0 auto;
+      }
+      
+      p{line-height: 2;}
+      p>a{display: block;}
+      p>a:hover{text-decoration: underline;}
+      
+      /* [target]속성을 갖는 a 요소를 선택해서 노란배경색 */
+      a[target]{background-color: #ff0;}
+      
+      /* [href="http://naver.com"]이 일치하는 a 요소를 선택해서 글자크기를 30px */
+      a[href="https://www.naver.com"]{font-size: 30px;}
+      
+      a[title]{background-color: pink;}
+   </style>
+</head>
+<body>
+   <div id="wrap">
+      <h1 class="text-center">태그의 속성을 이용한 CSS 선택</h1>
+      
+      <p>
+         <a href="https://www.naver.com/" rel="noopenner noreferrer" target="_blank">네이버</a>
+         <a href="https://www.naver.com">네이버</a>
+         <a href="https://www.naver.com/">네이버</a>
+         <a href="https://www.naver.com/" title="네이버바로가기">네이버</a>
+      </p>
+   </div>
+</body>
+</html>

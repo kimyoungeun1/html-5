@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      
+      .frame{
+         overflow: hidden;
+         position: relative;/*그림자 기준점*/
+         width: 250px;
+         height: 300px;
+         margin: 0 auto;
+         border-radius: 10px;
+      }
+      
+      .frame>.tit{
+         position: absolute;
+         left: 20px;
+         top: 30px;
+         z-index: 100;
+         color: white;
+      }
+      
+      .frame>.tit>h2{font-size: 28px;}
+      
+      .frame>.tit>p{
+         font-weight: 600;
+         font-size: 16px;
+      }
+      
+      .frame>.tit>.btn{
+         display: block;
+         width: 85px;
+         margin-top: 130px;
+         padding: 10px 0;
+         font-weight: 500;
+         font-size: 14px;
+         text-align: center;
+         background-color: white;
+         border-radius: 10px;
+      }
+      
+      
+      .frame>img{
+         display: block;
+         width: 130%;
+         transition: all 1s;
+      }
+      
+      .frame:hover>img{
+         transform: scale(1.2);
+         opacity: 0.9;
+      }
+      
+      .frame:after{
+         display: block;
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 250px;
+         height: 300px;
+         background-color: rgba(0,0,0,0.3);         
+         content: '';
+         transition:all 1s;
+      }
+      
+      .frame:hover:after{
+         background-color: rgba(0,0,0,0.1);
+      }
+   </style>
+</head>
+<body>
+   <div id="wrap">
+      <h1 class="text-center">이미지 확대효과</h1>
+      
+      <div class="frame">
+         <div class="tit">
+            <h2>방콕</h2>
+            <p>700여 개의 여행상품</p>
+            <a href="#" class="btn">둘러보기</a>
+         </div>
+         <img src="https://d2ur7st6jjikze.cloudfront.net/landscapes/4652_large_square_1535619901.jpg?1535619901" alt="#" />
+      </div>
+   </div>
+</body>
+</html>
+
+

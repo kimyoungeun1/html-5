@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      #wrap{
+         width: 90%;
+         margin: 0 auto;         
+      }
+      
+      .container{
+         display: flex;
+         flex-flow: row nowrap;
+         justify-content: center;
+         align-items: center;/* 한줄일때의 교차축정렬 - 모든 아이템에 일괄 적용 */
+         
+         height: 500px;
+         background-color: gray;
+      }
+      
+      p.item{height: 100px;}
+      
+      p.item:nth-child(1){height:auto; align-self:stretch;}/* 아이템의 높이가 지정되어 있지 않을때 적용 */
+      
+      p.item:nth-child(2){align-self: flex-start;}
+      p.item:nth-child(3){align-self: flex-end;}
+      p.item:nth-child(4){align-self: center;}
+      p.item:nth-child(5){align-self: auto;} /* 기본값 : 컨테이너에 설정된 align-items 속성값을 상속 */
+      
+   </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1 class="text-center">교차축 방향으로 아이템 개별 정렬(align-self)</h1>
+    <section class="container">
+      <p class="item" style="width:100px;background-color:red;">1</p>
+      <p class="item" style="width:80px;background-color:orange;">2</p>
+      <p class="item" style="width:200px;background-color:yellow;">3</p>
+      <p class="item" style="width:300px;background-color:green;">4</p>
+      <p class="item" style="width:120px;background-color:blue;">5</p>
+    </section>
+  </div>
+</body>
+</html>

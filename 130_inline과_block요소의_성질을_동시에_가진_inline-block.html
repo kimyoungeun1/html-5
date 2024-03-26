@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>html5</title>
+	<style>
+		h1{
+			font-size:20px;
+			text-align:center;
+		}	
+		p{
+			display:inline-block;
+			width:100px;
+			height:100px;
+			background-size:cover;
+			border:1px solid black;
+		}
+		p.seodo{
+			background-image:url(./images/seodo.jpg);
+		}
+		p.dongdo{
+			background-image:url(./images/dongdo.jpg);
+		}
+		
+		h2{
+			display:none;
+			visibility:hidden;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<h1>독도는 2개의 섬으로 구성</h1>
+		<p class="seodo">서도</p>
+		<p class="dongdo">동도</p>
+			
+		<h2>태그간의 줄바꿈은 한칸의 공백으로 인식되기 때문에 한칸만큼 떨어져 있게 된다.</h2> 
+	</div>
+</body>
+</html>

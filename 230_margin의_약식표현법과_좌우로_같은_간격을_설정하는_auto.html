@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      #dokdo{
+         width: 800px;
+         height: 400px;
+         
+         /* auto 키워드는 부모요소를 기준으로 박스의 좌우에 같은 간격의 마진을 자동으로 설정해준다. */
+         margin-right:auto;
+         margin-left: auto;
+         
+         margin: 0 auto;/* 0은 상하, auto는 좌우 */
+         
+         /* 30px은 상, auto는 좌우, 0은 아래방향 */
+         margin: 30px auto 0;
+         
+         margin: 0;
+         
+         border: 1px solid blue;
+      }
+      
+      /* .seodo와 .dongdo 요소의 크기를 250*180, 검정테두리, 글자는 흰색으로 설정하시오. */
+      .seodo,.dongdo{
+         display: inline-block;
+         width: 250px;
+         height: 180px;
+         color: #fff;
+         border: 1px solid #000;
+      }
+      
+      /* .seodo에는 배경이미지로 seodo-250.jpg,  .dongdo에는 dongdo-250.jpg로 배경이미지를 설정하시오 */
+      .seodo{
+         background-image: url(./images/seodo-250.jpg);
+      }
+      
+      .dongdo{
+         background-image: url(./images/dongdo-250.jpg);
+      }
+      
+      .bochal{
+         width: 80px;
+         height: 50px;
+         margin: 50px auto 0;
+         color: #fff;
+         background-image: url(./images/bochal.jpg);
+         border: 1px solid #000;
+      }
+   </style>
+</head>
+<body>
+   <div id="dokdo">
+      <p class="seodo">서도</p><p class="dongdo">동도</p>
+      <p class="bochal">보찰바위</p>
+   </div>
+</body>
+
+</html>

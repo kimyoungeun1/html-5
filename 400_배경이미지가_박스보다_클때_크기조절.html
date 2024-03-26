@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      #wrap{padding-bottom: 100px;}
+      
+      p{
+         width: 800px;
+         height: 250px;
+         margin: 0 auto 80px;
+         background-image: url(./images/img_dokdo.jpg);
+         background-repeat: no-repeat;
+         outline: 1px solid red;
+      }
+      
+      p.s1{
+         background-size: 550px 150px;
+      }
+      
+      p.s2{         
+         /* 배경이미지가 종횡비를 유지하며 높이는 자동으로 조절된다.(auto) */
+         background-size: 550px;
+      }
+   
+      p.s3{      
+         /* 배경이미지가 박스보다 더 클경우 요소의 세로높이에 맞춤 */
+         background-size: cover;
+      }
+      
+      p.s4{
+         /* 배경이미지가 박스보다 더 클경우 요소의 가로폭에 맞춤 */
+         background-size: contain;
+      }
+   </style>
+</head>
+<body>
+   <div id="wrap">
+      <h1 class="text-center">배경이미지 크기조절</h1>
+      
+      <p class="s1">background-size : 550px 150px</p>
+      <p class="s2">background-size : 550px</p>
+      <p class="s3">background-size : cover(박스의 세로높이에 딱맞춤)</p>
+      <p class="s4">background-size : contain(박스의 가로폭에 딱맞춤)</p>
+   </div>
+</body>
+</html>

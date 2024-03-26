@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>html5</title>
+		<style>
+		/* 첫 번째로 나오는 div에 {파란테두리, 글자를 가운데 정렬}
+		/* id명이 wrap인 이름표를 가진 div */
+		div#wrap{
+			border:1px solid red;
+		}
+		
+		/* id명이 wrap인 이름표를 가진 모든태그 */
+		/* *(별표) : 전체 선택자 */
+		*#wrap{
+			text-align:center;
+		}
+		
+		/* 별표는 특별한 경우가 아니면 생략한다. */
+		#wrap{
+			border-radius:30px;
+		}
+		
+		/* 퀴즈) class명이 .container인 이름표를 가진 div의 직계자식 h2의 글자색을 purple로 설정하시오. */
+		div.container>h2{color:purple;}
+		
+		
+		/* 클래스명이 dokdo인 이름표를 가진 모든태그 */
+		.dokdo{
+			width:80%;
+			border-radius:50px;
+		}
+	</style>
+	</head>
+<body>
+	<!-- 한 페이지에 같은 id를 중복해서 사용하지 않는다-->
+	<div id="wrap">
+		<h1>독도의 오늘</h1>
+		<p>독도는 화산활동으로 생겨난 두개의 큰 섬(동도, 서도)입니다. </p>
+	
+	<!-- class는 id와 달리 한페이지에 같은 이름의 클래스를 여러군데 중복해서 사용 가능-->
+	<div class="container">
+		<h2>1. 동도에서 바라본 서도</h2>
+		<p>
+			<img class="dokdo" src="./images/seodo.png" alt="서도">
+		</p>
+		
+		<h2>2. 서도에서 바라본 동도</h2>	
+		<p>
+			<img class="dokdo" src="./images/dongdo.png" alt="동도">
+		</p>	
+	</div>
+		<P>맞은편에서 바라본 독도의 모습입니다.</P>
+	</div>
+</body>
+</html>

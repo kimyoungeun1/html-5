@@ -1,0 +1,7 @@
+이전다음 버튼
+
+width: 37px;
+height: 74px;
+
+left{background-position:-310px -300px;}
+right{background-position:-310px -376px;}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>html5</title>
+		<style>
+			/*
+				CSS의 핵심 표기법
+				누구에게{무엇을:어떻게;}
+				
+				1. 블럭요소의 특징
+					1) 기본값 width가 부모사이즈의 100%로 설정되어 있다.
+					2) width값을 줄여도 지배영역은 부모사이즈의 100%만큼 차지한다.
+					3) width, height값을 지정시 정상적으로 적용됨
+					
+				2. 인라인요소의 특징
+					1)기본값 width가 딱 컨텐츠 양만큼만 차지한다.
+					2)지배영역도 컨텐츠 양만큼이다.
+					3) width, height 값을 지정해도 적용 안됨	
+			*/
+			
+			div{
+				display:block;/* 주지 않아도 설정되어 있는 기본 속성*/
+				
+				width:100%;/* 기본값*/
+				width:250px; 
+				height:50px;
+				border-width:1px;
+				border-style:solid;
+				border-color:red;
+			}
+			
+			span{
+				display:inline;/* 주지않아도 설정되어 있는 기본 속성*/ 
+				
+				width:250px;
+				height:50px;
+				border:1px solid blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div>block 요소1</div>
+		<div>block 요소2</div>
+		<div>block 요소3</div>
+		
+		<hr />
+		
+		<span>inline 요소1</span>
+		<span>inline 요소2</span>
+		<span>inline 요소3</span>
+	</body>
+</html>

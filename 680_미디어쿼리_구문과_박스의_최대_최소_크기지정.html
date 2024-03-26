@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      #wrap{
+         width: 1200px;
+         margin: 0 auto;
+         padding-bottom: 50px;
+         background-color: pink;
+      }
+      
+      h2{margin-bottom: 20px;}
+      
+      p{
+         width: 100%;
+         max-width:800px;/* 최대폭 지정 */
+         line-height: 2;
+         background-color: yellow;
+      }
+      
+      @media screen and (max-width:1200px){
+         #wrap{
+            width: 960px;
+            background-color: orange;
+         }
+         
+         p{
+            background-color: bluelight;
+            min-height: 230px; /* 최소높이 설정 */
+         }
+      }
+      
+      @media screen and (max-width:992px){
+         #wrap{
+            width: 800px;
+            height: 600px;
+            color: white;
+            background-color: blue;
+         }
+         
+         p{
+            max-width: initial;
+            min-width: 900px;/* 최소폭 지정 */
+            height: 100%;
+            max-height: 300px;/* 최대높이 설정 */
+            min-height: initial;/* 기본값, 초기값 */
+            color: black;
+         }
+      }
+      
+      @media screen and (max-width:640px){
+         #wrap{
+            width: 100%;
+            margin: initial;
+            background-color: green;
+         }
+         
+         p{
+            min-width: initial;
+            max-width: 250px;
+            margin-left: 50px;
+            background-color: pink;
+         }
+      }
+   </style>
+</head>
+<body>
+   <div id="wrap">
+      <h1 class="text-center">박스의 최대 최소 크기 지정</h1>
+      
+      <h2>CSS 속성명</h2>
+      <p>
+         1. max-width : 최대폭 <br />
+         2. max-height : 최대높이 <br />
+         
+         3. min-width : 최소폭 <br />
+         4. min-height : 최소높이         
+      </p>
+   </div>
+</body>
+</html>

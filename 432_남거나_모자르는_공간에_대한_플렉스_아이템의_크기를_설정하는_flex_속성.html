@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>html5</title>
+	<link rel="stylesheet" href="./css/reset.css" />
+	<style>
+		#wrap{
+      		width: 90%;
+      		margin: 0 auto;
+    }
+
+    h2{
+      height: 50px;
+      margin-top: 50px;
+      line-height: 50px;
+      text-align: center;
+    }
+
+    .container{
+      display: flex;
+      flex-flow: row nowrap;
+      height: 150px;
+      background-color:gray;
+    }
+	
+	/*
+		flex 속성은 아이템별로 개별 적용한다.
+		
+		1. flex-grow : 컨테이너에 남는 공간이 발생할 때 아이템의 크기를 지정한 비율대로 늘릴 수 있게 하는 속성
+		
+		2. flex-shrink : 컨테이너의 공간이 부족할 때 아이템의 크기를 지정한 비율대로 줄일 수 있게 하는 속성
+		
+		3. flex
+	
+	
+	</style>
+
+</head>
+<body>
+  <div id="wrap">
+    <section class="container">
+      <p class="item1" style="width:100px;background-color:red;">1</p>
+      <p class="item2" style="width:80px;background-color:orange;">2</p>
+      <p class="item3" style="width:200px;background-color:yellow;">3</p>
+      <p class="item4" style="width:300px;background-color:green;">4</p>
+      <p class="item5" style="width:120px;background-color:blue;">5</p>
+      <p class="item6" style="width:250px;background-color:Indigo;">6</p>
+      <p class="item7" style="width:150px;background-color:purple;">7</p>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      #wrap{
+         padding-bottom: 100px;
+         text-align: center;
+      }
+      
+      .video-container{
+         width: 768px;
+         height: 440px;
+         margin: 0 auto 100px;
+      }
+      
+      .video-container>video{
+         display: block;
+         width: 100%;
+      }
+   </style>
+</head>
+<body>
+   <div id="wrap">
+      <h1 class="text-center">video 태그로 mp4 재생</h1>
+      
+      <!-- 사용법1 -->
+      <figure class="video-container">
+         <video controls src="./images/media/dokdo.mp4">
+            HTML5를 지원하는 브라우저에서만 재생할 수 있습니다.(크롬권장)
+         </video>
+         <figcation>&lt; 독도는 우리땅 &gt;</figcation>
+      </figure>
+      
+      <!-- 실무사용법2(권장) -->
+      <figure class="video-container">
+         <!-- autoplay 기능은 크롬자체에서 막음 -->
+         <!-- 해결법은 muted 속성 기재 -->
+         <!-- playsinline 속성은 아이폰에서 볼때 전체화면으로 넘어가는 것을 방지 -->
+         <video autoplay muted loop playsinline>
+            <source src="./images/media/dokdo.mp4" type="video/mp4" />
+            <source src="./images/media/dokdo.ogg" type="video/ogg" />
+            <source src="./images/media/dokdo.webm" type="video/webm" />
+            HTML5를 지원하는 브라우저에서만 재생할 수 있습니다.(크롬권장)
+         </video>
+         <figcation>&lt; 독도는 우리땅 &gt;</figcation>
+      </figure>
+      
+      <!-- 유튜브사용법3 -->
+      <figure class="video-container">
+         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ymU8htqPUoc" title="極小パピー、生後3か月の初めてのトリミング（トイプードル）" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <figcaption>&lt; 생후 3 개월에 처음으로 손질하는 아주 작은 강아지 (토이 푸들) &gt;</figcaption>
+      </figure>
+      
+      <h2>오디오 태그</h2>
+      <p>
+         <audio controls src="./images/media/music.mp3" />
+      </p>
+   </div>
+</body>
+</html>
+

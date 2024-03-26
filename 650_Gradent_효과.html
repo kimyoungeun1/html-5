@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      h1{
+         height: 500px;
+         line-height: 500px;
+         text-align: center;
+         background: linear-gradient(to bottom, red 0%, blue 50%);
+         
+         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff0000+0,0000ff+100&0.74+0,1+100 */
+         background: linear-gradient(to bottom,  rgba(255,0,0,0.74) 0%,rgba(0,0,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+         
+         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b7deed+0,71ceef+50,21b4e2+51,b7deed+100;Shape+1+Style */
+         background: linear-gradient(to bottom,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+         
+      }
+      
+      h2{
+         margin-top: 100px;
+         padding-bottom: 100px;
+         text-align: center;
+      }
+      
+      h2>span{
+         display: block;
+         height: 50px;
+         font-size: 50px;
+         line-height: 50px;
+         
+         /* 글자에 그래디언트 효과 */
+         color: transparent;
+         background: linear-gradient(to right, blue 12%, red 50%, green 100%);
+         background-clip:text;/* 지정한 background 속성값을 어디에 적용시킬지 결정 */
+      }
+   </style>
+</head>
+<body>
+   <h1>배경에 그레디언트 효과</h1>
+   
+   <h2><span>TEXT Gradient Effect</span></h2>
+</body>
+</html>

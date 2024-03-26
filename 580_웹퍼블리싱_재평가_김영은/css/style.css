@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+.sr-only{position: absolute; left:-9999px;}
+
+body{background-color: #e9f1f5;}
+
+#wrap{
+   width: 1000px;
+   margin: 0 auto;
+   background-color: #ffffff;
+}
+
+header{
+   position: relative;/*기준점설정*/
+   background-color: #ffffff;
+}
+
+header>h1.tit{
+   position: absolute;
+   font-size: 20px;
+}
+
+header>h1.tit>a{
+   display: block;
+   color: 00364d;
+   line-height: 100px;
+}
+
+header>h2.sub{position: flxed;
+			text-align: right;
+			color: #d0dbe5;
+}			
+header>h3.su{position: flxed;
+			text-align: right;
+			font-size: 20px;
+			color: #d0dbe5;
+}
+
+header>h4>img{width:1000px;
+    		overflow:hidden;
+}
+
+header>p.hidden{
+    		overflow:hidden;
+    		text-indent: -9999px;
+}
+
+header>h5{
+	color: navy;
+text-align: center;
+font-size: 20px;
+}
+header>h6{color: red;
+text-align: center;
+font-size: 20px;
+}
+
+header>p{color: black;
+text-align: center;
+}
+
+header>h5{
+	color: navy;
+text-align: center;
+}
+
+header>p{color: black;
+text-align: center;
+font-size: 20px;
+}
+
+header>h5{
+	color: navy;
+text-align: center;
+font-size: 20px;
+}
+
+header>h6>img{
+	width: 30px;
+	height: 30px;
+	text-align: right;
+}
+
+
+header>p{color: black;
+text-align: center;
+font-size: 20px;
+}
+
+h5{color: navy;
+text-align: right;
+font-size: 20px;
+}
+
+h6{color: navy;
+text-align: right;
+font-size: 20px;
+}
+
+p{color: black;
+text-align: right;
+font-size: 20px;
+}
+
+
+
+header>p{color: black;
+text-align: center;
+}
+header>nav{
+   width: 20%;
+   height: 20%;
+   background-color: #becfd6;  
+   padding: 10px; 
+}
+
+header>nav>.gnb>li.on>a{color: blue;}
+
+header>nav>.gnb>li:hover>a{
+   color: #394753;
+   background-color: #fff;
+}
+
+header>nav>.mo>li.op>a{color: navy;}
+
+header>nav>.mo>li>a{color: navy;}
+header>nav>.mo>li.or{color: black;
+					text-align: right;
+}
+header>nav>.mo>li.or>a{color: black;
+					text-align: right;
+}
+
+footer>address{
+   height: 30px;
+   line-height: 30px;
+   text-align: center;
+   color: black;
+}
+

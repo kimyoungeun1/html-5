@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      #wrap{
+         width: 90%;
+         margin: 0 auto;
+         padding-bottom: 50px;
+         background-color: beige;
+      }
+      
+      .container{
+         display: flex;
+         
+         /* 주축의 방향설정 : 기본값 row, row-reverse, column, column-reverse */
+         flex-direction:row;
+         
+         flex-wrap:nowrap;
+         flex-wrap:wrap;
+         /*
+            flex-wrap 속성 : 플렉스아이템을 한줄 or 여러줄 설정
+            
+            1. nowrap(기본값) - 플렉스컨테이너의 width가 모든 아이템의 합보다 작으면
+                          아이템의 크기 비율로 자동으로 계산하여 모자란 크기만큼
+                          지분비율대로 축소시켜서 최종 한줄로 나열
+                          
+            2. wrap - 플렉스컨테이너의 width가 모든 아이템의 합보다 작으면
+                    아이템이 drop 되어 여러줄로 나열                       
+         */
+         
+         
+         /* 주축정렬 */
+         justify-content: center; /* 주축의 중앙에 정렬(tac와 비슷) */
+         justify-content: space-between;/* 좌우 아이템을 양끝에 붙이고, 나머지는 동일 간격으로 정렬 */
+         justify-content: space-around;/* 모든 아이템이 좌우로 같은 마진값을 가지면서 정렬*/
+         justify-content: space-evenly;/* 모든 아이템의 좌우 간격을 같게 하여 정렬(등간격) */
+         justify-content: flex-end;/* 주축의 끝지점을 기준으로 정렬(tar 과 비슷) */
+         justify-content: flex-start; /* 기본값 : 주축의 시작지점을 기준으로 정렬(tal 와 비슷) */
+
+
+         /* 한줄일때의 교차축 정렬 */
+         align-items:center;/* 아이템을 교차축의 중앙에 정렬 */
+         align-items:flex-end;/* 교차축의 끝지점에 정렬 */
+         align-items:flex-start;/* 교차축의 시작지점에 정렬 */
+         
+         
+         /* 여러줄일때의 교차축 정렬 - 설정값은 주축정렬과 같음 */
+         align-content:flex-end;
+         align-content:flex-start;
+         align-content:center;
+         align-content:space-between;
+         align-content:space-around;
+         align-content:space-evenly;
+         
+         
+         height: 1500px;
+         border: 1px solid black;
+      }
+      
+      .container>p{
+         height: 300px;
+         font-size: 32px;
+         text-align: center;
+      }
+      /*
+         플렉스 아이템의 순서를 정하는 order 속성
+         
+         1. 플렉스아이템의 기본 order 속성값은 0으로 설정되어 있음
+         2. 그런데 order 속성값이 같은 경우에는 태그의 코딩 순서대로 나열됨
+         3. order 속성은 아이템에 개별적으로 적용해야 한다.
+         4. 100단위 권장, 음수도 가능
+      */
+      
+      .container>p.item-1{order:100; width:20%; background-color:red;}
+      
+      .container>p.item-2{order:200; width:40%; background-color:blue;}
+      
+      .container>p.item-3{order:300; width:200px; background-color:orange;}
+      
+      .container>p.item-4{order:-100; width:100px; background-color:skyblue;}
+      
+      .container>p.item-5{order:-200; width:150px; background-color:tomato;}
+   </style>
+</head>
+<body>
+   <div id="wrap">
+      <h1 class="text-center">flex의 개념 : 일정한 규칙이나 패턴을 가진 박스나열</h1>
+      
+      <!-- flex가 적용된 부모요소를 flex-container 라고 한다. -->
+      <div class="container">
+      
+         <!-- 이때 자식요소를 flex-item 이라고 한다. -->
+         <p class="item-1">1</p>
+         <p class="item-2">2</p>
+         <p class="item-3">3</p>
+         <p class="item-4">4</p>
+         <p class="item-5">5</p>
+      </div>
+   </div>
+</body>
+</html>

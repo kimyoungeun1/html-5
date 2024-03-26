@@ -1,0 +1,41 @@
+<!Doctype html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8" />
+   <title>html5</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <style>
+      #wrap{
+         width: 960px;
+         margin: 30px auto;
+      }
+      
+      header, .left, .content, .right, footer{
+         border: 1px solid gray;
+      }
+      
+      section{
+         display:flex;
+         height: 300px;
+      }
+      
+      .left{width: 240px;background-color:skyblue;}
+      .content{width: 480px;background-color:yellowgreen;}
+      .right{width: 240px;background-color:brown;}
+      
+      header{height:100px;background-color:yellow;}
+      footer{height:100px;background-color:#dedede;}
+   </style>
+</head>
+<body>
+   <div id="wrap">
+      <header>헤더</header>
+      <section>
+         <div class="left">left</div>
+         <div class="content">content</div>
+         <div class="right">right</div>
+      </section>
+      <footer>푸터</footer>
+   </div>
+</body>
+</html>
